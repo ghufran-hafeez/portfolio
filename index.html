@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHUFRAN // Premium Creative Portfolio - Video, Design & Web</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Ghufran, a premium freelance creator specializing in Video Editing, Graphic Designing, and Web Development. Crafting cinematic visuals, branding, and modern custom web solutions.">
+    <meta name="keywords" content="Video Editing, Graphic Design, Web Development, Freelancer, Portfolio, Fiverr Freelancer, Creative Director, Shopify developer, Cinematic Video Editor">
+    <meta name="author" content="Ghufran">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ghufran.dev/">
+    <meta property="og:title" content="GHUFRAN // Premium Creative Portfolio">
+    <meta property="og:description" content="Turning Ideas Into Stunning Visual Experiences. Custom Video Editing, Graphic Design, and Web Development.">
+    <meta property="og:image" content="media/portfolio-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ghufran.dev/">
+    <meta property="twitter:title" content="GHUFRAN // Premium Creative Portfolio">
+    <meta property="twitter:description" content="Turning Ideas Into Stunning Visual Experiences. Custom Video Editing, Graphic Design, and Web Development.">
+    <meta property="twitter:image" content="media/portfolio-preview.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline">
+        <span class="cursor-text" id="cursorText"></span>
+    </div>
+
+    <!-- Background Gradients Mesh -->
+    <div class="bg-mesh">
+        <div class="mesh-orb orb-1"></div>
+        <div class="mesh-orb orb-2"></div>
+        <div class="mesh-orb orb-3"></div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <a href="#home" class="logo magnetic" data-magnetic-strength="0.3">
+                <span class="logo-accent">GHUFRAN</span><span class="logo-dot">.</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="bar bar-top"></span>
+                <span class="bar bar-mid"></span>
+                <span class="bar bar-bot"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link magnetic" data-magnetic-strength="0.2">Home</a></li>
+                    <li><a href="#services" class="nav-link magnetic" data-magnetic-strength="0.2">Services</a></li>
+                    <li><a href="#about" class="nav-link magnetic" data-magnetic-strength="0.2">About Us</a></li>
+                    <li><a href="#portfolio" class="nav-link magnetic" data-magnetic-strength="0.2">Portfolio</a></li>
+                    <li><a href="#testimonials" class="nav-link magnetic" data-magnetic-strength="0.2">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link magnetic" data-magnetic-strength="0.2">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#contact" class="header-cta magnetic btn-hover-effect" data-magnetic-strength="0.3">
+                <span>Let's Talk</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+
+        <!-- Home (Hero) Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-tagline reveal-text">
+                        <span>Creative Multi-Disciplined Freelancer</span>
+                    </div>
+                    <h1 class="hero-title reveal-text">
+                        Turning Ideas Into <br>
+                        <span class="text-gradient">Stunning Visual</span> <br>
+                        Experiences
+                    </h1>
+                    <p class="hero-subtitle reveal-text">
+                        Video Editing &bull; Graphic Designing &bull; Web Development
+                    </p>
+                    <div class="hero-buttons reveal-btn">
+                        <a href="#portfolio" class="btn btn-primary magnetic btn-hover-effect" data-cursor-hover="explore" data-magnetic-strength="0.4">
+                            <span>View Portfolio</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary magnetic btn-hover-effect" data-cursor-hover="chat" data-magnetic-strength="0.4">
+                            <span>Hire Me</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cinematic Showreel Container -->
+                <div class="hero-showreel-wrapper reveal-visual">
+                    <div class="showreel-container magnetic" data-magnetic-strength="0.1" id="showreelTrigger" data-cursor-hover="play">
+                        <div class="showreel-glow"></div>
+                        <div class="showreel-frame">
+                            <!-- Overlay Content -->
+                            <div class="showreel-overlay">
+                                <div class="play-button-wrapper">
+                                    <div class="play-button-ring"></div>
+                                    <button class="play-btn" aria-label="Play showreel">
+                                        <i data-lucide="play" class="play-icon"></i>
+                                    </button>
+                                </div>
+                                <span class="showreel-label">PLAY SHOWREEL</span>
+                            </div>
+
+                            <!-- Media Placeholder (Easily replaceable by user) -->
+                            <!-- User: To swap with own local video, save file to media/showreel.mp4 and uncomment the tag below -->
+                            <!--
+                            <video class="showreel-video" autoplay loop muted playsinline>
+                                <source src="media/showreel.mp4" type="video/mp4">
+                            </video>
+                            -->
+                            
+                            <!-- Beautiful Animated CSS/SVG Video Editing Canvas Placeholder -->
+                            <div class="showreel-placeholder-gfx">
+                                <div class="timeline-visual">
+                                    <div class="track track-1">
+                                        <div class="clip clip-video" style="width: 40%; left: 5%;"></div>
+                                        <div class="clip clip-video" style="width: 30%; left: 50%;"></div>
+                                    </div>
+                                    <div class="track track-2">
+                                        <div class="clip clip-audio" style="width: 25%; left: 10%;"></div>
+                                        <div class="clip clip-audio" style="width: 45%; left: 40%;"></div>
+                                    </div>
+                                    <div class="playhead"></div>
+                                </div>
+                                <div class="preview-waveform">
+                                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag reveal-text">What We Deliver</span>
+                    <h2 class="section-title reveal-text">Services Offered</h2>
+                </div>
+
+                <div class="services-grid">
+                    
+                    <!-- Service 01: Video Editing -->
+                    <div class="service-card reveal-card" data-cursor-hover="details">
+                        <div class="service-glow"></div>
+                        <div class="service-header">
+                            <span class="service-number">01</span>
+                            <i data-lucide="video" class="service-icon"></i>
+                        </div>
+                        <h3 class="service-title">Video Editing</h3>
+                        <p class="service-description">Cinematic editing and high-impact post-production optimized to tell compelling stories.</p>
+                        
+                        <ul class="service-list">
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Color Grading</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Music Video Editing</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Wedding Editing</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Motion Editing</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Social Media Reels</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> YouTube Video Editing</li>
+                        </ul>
+
+                        <!-- Media Area placeholder -->
+                        <div class="service-media-placeholder video-editing-placeholder">
+                            <!-- User: replace this graphic with an image/video wrapper -->
+                            <!-- <img src="media/service-video.jpg" alt="Video Editing Showcase"> -->
+                            <div class="scrubber-simulation">
+                                <div class="screen-frame">
+                                    <div class="screen-content video-screen">
+                                        <div class="color-wheel"></div>
+                                        <div class="timeline-slider">
+                                            <div class="slider-handle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 02: Graphic Designing -->
+                    <div class="service-card reveal-card" data-cursor-hover="details">
+                        <div class="service-glow"></div>
+                        <div class="service-header">
+                            <span class="service-number">02</span>
+                            <i data-lucide="palette" class="service-icon"></i>
+                        </div>
+                        <h3 class="service-title">Graphic Designing</h3>
+                        <p class="service-description">Premium brand identity and promotional design to ensure your business stands out visually.</p>
+                        
+                        <ul class="service-list">
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Logo Design</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Flyers Design</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Poster Design</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Billboard Designs</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Social Media Posts</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Business Branding</li>
+                        </ul>
+
+                        <!-- Media Area placeholder -->
+                        <div class="service-media-placeholder graphic-design-placeholder">
+                            <!-- User: replace this graphic with an image wrapper -->
+                            <!-- <img src="media/service-design.jpg" alt="Graphic Design Showcase"> -->
+                            <div class="canvas-simulation">
+                                <div class="canvas-art">
+                                    <svg viewBox="0 0 100 100" class="vector-path">
+                                        <path d="M10,80 Q50,10 90,80" fill="none" stroke="url(#gradient-accent)" stroke-width="3" />
+                                        <circle cx="50" cy="45" r="4" class="anchor-point" />
+                                        <line x1="50" y1="45" x2="30" y2="25" stroke="var(--cyan-glow)" stroke-width="1" stroke-dasharray="2" />
+                                        <circle cx="30" cy="25" r="2.5" class="handle-point" />
+                                        <defs>
+                                            <linearGradient id="gradient-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stop-color="var(--blue-electric)" />
+                                                <stop offset="100%" stop-color="var(--purple-neon)" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 03: Web Development -->
+                    <div class="service-card reveal-card" data-cursor-hover="details">
+                        <div class="service-glow"></div>
+                        <div class="service-header">
+                            <span class="service-number">03</span>
+                            <i data-lucide="code-2" class="service-icon"></i>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Modern, fast-loading business and e-commerce websites built with focus on conversions.</p>
+                        
+                        <ul class="service-list">
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> E-commerce Store</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Shopify Store</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Portfolio Website</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Business Website</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Landing Pages</li>
+                            <li><i data-lucide="check-circle" class="list-bullet"></i> Custom Web Solutions</li>
+                        </ul>
+
+                        <!-- Media Area placeholder -->
+                        <div class="service-media-placeholder web-dev-placeholder">
+                            <!-- User: replace this graphic with image wrapper -->
+                            <!-- <img src="media/service-web.jpg" alt="Web Development Showcase"> -->
+                            <div class="code-simulation">
+                                <div class="browser-header">
+                                    <span class="dot-btn red"></span>
+                                    <span class="dot-btn yellow"></span>
+                                    <span class="dot-btn green"></span>
+                                </div>
+                                <div class="browser-body">
+                                    <div class="code-line"><span class="const">const</span> <span class="func">app</span> = <span class="keyword">new</span> <span class="class">Portfolio</span>();</div>
+                                    <div class="code-line indent"><span class="func">app</span>.<span class="call">render</span>({ <span class="prop">speed</span>: <span class="string">'100%'</span> });</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="about-grid">
+                    
+                    <!-- Profile Media Column -->
+                    <div class="about-image-column reveal-visual">
+                        <div class="profile-frame-wrapper magnetic" data-magnetic-strength="0.1" data-cursor-hover="about">
+                            <div class="profile-glow"></div>
+                            <div class="profile-border">
+                                <!-- User: replace this placeholder with local portrait image file "media/profile.jpg" -->
+                                <div class="profile-image-placeholder">
+                                    <div class="avatar-mesh">
+                                        <i data-lucide="user" class="avatar-icon"></i>
+                                        <div class="grid-scanning"></div>
+                                    </div>
+                                </div>
+                                <!-- Optional: <img src="media/profile.jpg" class="profile-img" alt="Ghufran Profile"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Details Column -->
+                    <div class="about-content-column">
+                        <span class="section-tag reveal-text">The Creative Force</span>
+                        <h2 class="section-title reveal-text">About Us</h2>
+                        
+                        <div class="about-paragraphs reveal-text">
+                            <p>We are a highly focused creative partnership delivering premium visuals, designs, and high-performance websites for clients globally. Operating with cutting-edge production methodologies, we bridge the gap between creative design and technical execution.</p>
+                            <p>Whether editing a fast-paced cinematic commercial for YouTube or social campaigns, modeling bespoke branding guides for start-ups, or building custom codebases optimized to drive user engagement, we scale our delivery to your brand requirements.</p>
+                            <p>Our work is tailored to meet 2026 motion-design and web-speed standards. We cooperate with creators, agencies, and businesses looking to elevate their professional presence and convert search traffic into recurring revenue.</p>
+                        </div>
+
+                        <!-- Statistics Counter Odometer Grid -->
+                        <div class="stats-grid">
+                            <div class="stat-card reveal-card">
+                                <div class="stat-number-wrapper">
+                                    <span class="stat-number" data-target="80">0</span><span class="stat-suffix">+</span>
+                                </div>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-card reveal-card">
+                                <div class="stat-number-wrapper">
+                                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                                </div>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                            <div class="stat-card reveal-card">
+                                <div class="stat-number-wrapper">
+                                    <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+                                </div>
+                                <span class="stat-label">Years of Experience</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="section-container">
+                <div class="portfolio-header">
+                    <div>
+                        <span class="section-tag reveal-text">Selected Work</span>
+                        <h2 class="section-title reveal-text">Featured Portfolio</h2>
+                    </div>
+                    
+                    <!-- Category Filter Buttons -->
+                    <div class="filter-controls reveal-btn">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="video">Video Editing</button>
+                        <button class="filter-btn" data-filter="design">Graphic Design</button>
+                        <button class="filter-btn" data-filter="web">Web Development</button>
+                    </div>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" id="portfolioGrid">
+                    
+                    <!-- Portfolio Item 1 (Video) -->
+                    <div class="portfolio-item show" data-category="video" data-cursor-hover="view">
+                        <div class="portfolio-card">
+                            <div class="portfolio-media">
+                                <!-- User: replace this placeholder with image/video -->
+                                <div class="portfolio-placeholder-gfx video-gfx">
+                                    <div class="play-icon-glow">
+                                        <i data-lucide="video" class="icon-m"></i>
+                                    </div>
+                                    <span class="gfx-overlay-text">Video Portfolio Preview</span>
+                                </div>
+                                <!-- <img src="media/portfolio/project1-thumb.jpg" alt="Video Project"> -->
+                            </div>
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Video Editing</span>
+                                <h3 class="portfolio-title">Cinematic Brand Showreel</h3>
+                                <p class="portfolio-desc">High-paced commercial cut featuring color grading, seamless audio sync, and motion title overlays.</p>
+                                <button class="portfolio-link-btn" aria-label="View Project Details">
+                                    <span>View Project</span> <i data-lucide="arrow-up-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 (Design) -->
+                    <div class="portfolio-item show" data-category="design" data-cursor-hover="view">
+                        <div class="portfolio-card">
+                            <div class="portfolio-media">
+                                <div class="portfolio-placeholder-gfx design-gfx">
+                                    <div class="play-icon-glow">
+                                        <i data-lucide="layers" class="icon-m"></i>
+                                    </div>
+                                    <span class="gfx-overlay-text">Branding Portfolio Preview</span>
+                                </div>
+                                <!-- <img src="media/portfolio/project2.jpg" alt="Branding Project"> -->
+                            </div>
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Graphic Design</span>
+                                <h3 class="portfolio-title">Aether Brand Identity</h3>
+                                <p class="portfolio-desc">Minimalist corporate rebranding suite including logo guidelines, flyers, posters, and stationary mockup sheets.</p>
+                                <button class="portfolio-link-btn" aria-label="View Project Details">
+                                    <span>View Project</span> <i data-lucide="arrow-up-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 (Web) -->
+                    <div class="portfolio-item show" data-category="web" data-cursor-hover="view">
+                        <div class="portfolio-card">
+                            <div class="portfolio-media">
+                                <div class="portfolio-placeholder-gfx web-gfx">
+                                    <div class="play-icon-glow">
+                                        <i data-lucide="monitor" class="icon-m"></i>
+                                    </div>
+                                    <span class="gfx-overlay-text">Web Portfolio Preview</span>
+                                </div>
+                                <!-- <img src="media/portfolio/project3.jpg" alt="Web Project"> -->
+                            </div>
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Web Development</span>
+                                <h3 class="portfolio-title">Apex E-Commerce Ecosystem</h3>
+                                <p class="portfolio-desc">Custom responsive storefront architecture featuring modular cart systems, checkout gateways, and dashboard overlays.</p>
+                                <button class="portfolio-link-btn" aria-label="View Project Details">
+                                    <span>View Project</span> <i data-lucide="arrow-up-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 (Video) -->
+                    <div class="portfolio-item show" data-category="video" data-cursor-hover="view">
+                        <div class="portfolio-card">
+                            <div class="portfolio-media">
+                                <div class="portfolio-placeholder-gfx video-gfx-2">
+                                    <div class="play-icon-glow">
+                                        <i data-lucide="film" class="icon-m"></i>
+                                    </div>
+                                    <span class="gfx-overlay-text">Reels Portfolio Preview</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Video Editing</span>
+                                <h3 class="portfolio-title">Social Shorts & Reels Suite</h3>
+                                <p class="portfolio-desc">Dynamic TikTok, YouTube Shorts, and Instagram Reels formatted to maximize engagement and watch-retention ratios.</p>
+                                <button class="portfolio-link-btn" aria-label="View Project Details">
+                                    <span>View Project</span> <i data-lucide="arrow-up-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 (Design) -->
+                    <div class="portfolio-item show" data-category="design" data-cursor-hover="view">
+                        <div class="portfolio-card">
+                            <div class="portfolio-media">
+                                <div class="portfolio-placeholder-gfx design-gfx-2">
+                                    <div class="play-icon-glow">
+                                        <i data-lucide="image" class="icon-m"></i>
+                                    </div>
+                                    <span class="gfx-overlay-text">Promotions Portfolio Preview</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Graphic Design</span>
+                                <h3 class="portfolio-title">Cybernetic Promotional Billboards</h3>
+                                <p class="portfolio-desc">Large-format print and digital billboard advertising banners designed with bold futuristic neon styles.</p>
+                                <button class="portfolio-link-btn" aria-label="View Project Details">
+                                    <span>View Project</span> <i data-lucide="arrow-up-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 (Web) -->
+                    <div class="portfolio-item show" data-category="web" data-cursor-hover="view">
+                        <div class="portfolio-card">
+                            <div class="portfolio-media">
+                                <div class="portfolio-placeholder-gfx web-gfx-2">
+                                    <div class="play-icon-glow">
+                                        <i data-lucide="smartphone" class="icon-m"></i>
+                                    </div>
+                                    <span class="gfx-overlay-text">Landing Page Portfolio Preview</span>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Web Development</span>
+                                <h3 class="portfolio-title">SaaS Conversion Landing Page</h3>
+                                <p class="portfolio-desc">High-speed, SEO-friendly custom React landing page with smooth scroll behaviors and call-to-actions.</p>
+                                <button class="portfolio-link-btn" aria-label="View Project Details">
+                                    <span>View Project</span> <i data-lucide="arrow-up-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag reveal-text">Client Feedback</span>
+                    <h2 class="section-title reveal-text">Testimonials</h2>
+                </div>
+
+                <!-- Testimonials Slider Container -->
+                <div class="testimonials-slider-wrapper">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card" data-cursor-hover="drag">
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <i data-lucide="user-check" class="client-avatar-icon"></i>
+                                </div>
+                                <div class="client-meta">
+                                    <h4 class="client-name">Sarah Jenkins</h4>
+                                    <span class="client-service">Video Editing client</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Ghufran transformed our raw commercial footage into a breathtaking cinematic masterpiece. The color grading and audio syncing were absolutely flawless. Our YouTube CTR shot up by 25% after uploading!"</p>
+                            <div class="testimonial-stars">
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card" data-cursor-hover="drag">
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <i data-lucide="user-check" class="client-avatar-icon"></i>
+                                </div>
+                                <div class="client-meta">
+                                    <h4 class="client-name">David Kovic</h4>
+                                    <span class="client-service">Graphic Designing client</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"An absolute professional in visual branding. Ghufran designed our posters, logo guides, and social media flyers from scratch. The aesthetic is incredibly modern, high-end, and matches our vision."</p>
+                            <div class="testimonial-stars">
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card" data-cursor-hover="drag">
+                            <div class="client-info">
+                                <div class="client-avatar">
+                                    <i data-lucide="user-check" class="client-avatar-icon"></i>
+                                </div>
+                                <div class="client-meta">
+                                    <h4 class="client-name">Amina El-Amin</h4>
+                                    <span class="client-service">Web Development client</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"The Shopify ecosystem built by Ghufran exceeds expectations. It is ridiculously fast, loads instantly on mobile, and features responsive product filters that our shoppers love. Five stars all the way."</p>
+                            <div class="testimonial-stars">
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                                <i data-lucide="star" class="star-fill"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Slider Navigation Handles -->
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev magnetic" id="sliderPrev" aria-label="Previous testimonial" data-magnetic-strength="0.3">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <div class="slider-dots" id="sliderDots"></div>
+                        <button class="slider-arrow next magnetic" id="sliderNext" aria-label="Next testimonial" data-magnetic-strength="0.3">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="contact-grid">
+                    
+                    <!-- Contact Information column -->
+                    <div class="contact-info-column">
+                        <span class="section-tag reveal-text">Get in Touch</span>
+                        <h2 class="section-title reveal-text">Let's Create <br>Something Epic</h2>
+                        <p class="contact-intro reveal-text">Have a project in mind, need to upscale your branding, or looking to hire on Fiverr? Drop a line and let's get started on your customized solution.</p>
+                        
+                        <div class="contact-methods">
+                            <!-- Email -->
+                            <div class="contact-method-card reveal-card" data-cursor-hover="chat">
+                                <div class="method-icon-box">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-title">Direct Email</span>
+                                    <a href="mailto:hello@ghufran.dev" class="method-link">hello@ghufran.dev</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Location -->
+                            <div class="contact-method-card reveal-card">
+                                <div class="method-icon-box">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-title">Location</span>
+                                    <span class="method-link">Available Globally (GMT+5)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Handles Grid -->
+                        <div class="social-channels reveal-btn">
+                            <span class="social-header">Find me on:</span>
+                            <div class="social-icons-row">
+                                <!-- Fiverr -->
+                                <a href="https://fiverr.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn magnetic" data-magnetic-strength="0.3" aria-label="Fiverr Client Portal">
+                                    <span class="icon-label">FI</span>
+                                </a>
+                                <!-- LinkedIn -->
+                                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn magnetic" data-magnetic-strength="0.3" aria-label="LinkedIn Profile">
+                                    <i data-lucide="linkedin"></i>
+                                </a>
+                                <!-- Instagram -->
+                                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn magnetic" data-magnetic-strength="0.3" aria-label="Instagram Handle">
+                                    <i data-lucide="instagram"></i>
+                                </a>
+                                <!-- YouTube -->
+                                <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn magnetic" data-magnetic-strength="0.3" aria-label="YouTube Channel">
+                                    <i data-lucide="youtube"></i>
+                                </a>
+                                <!-- WhatsApp -->
+                                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-icon-btn magnetic" data-magnetic-strength="0.3" aria-label="WhatsApp Contact">
+                                    <i data-lucide="message-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form column -->
+                    <div class="contact-form-column reveal-card">
+                        <div class="glass-form-card">
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="formName" class="form-label">Full Name</label>
+                                    <input type="text" id="formName" class="form-input" placeholder="Your Name" required>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formEmail" class="form-label">Email Address</label>
+                                    <input type="email" id="formEmail" class="form-input" placeholder="name@domain.com" required>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formSubject" class="form-label">Subject</label>
+                                    <input type="text" id="formSubject" class="form-input" placeholder="Web Dev, Video Edit, Design proposal..." required>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="formMessage" class="form-label">Message Details</label>
+                                    <textarea id="formMessage" rows="5" class="form-input" placeholder="Briefly describe your project goals..." required></textarea>
+                                    <span class="input-focus-line"></span>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn btn-hover-effect magnetic" data-magnetic-strength="0.2" id="submitBtn">
+                                    <span class="submit-btn-text">Send Message</span>
+                                    <i data-lucide="send" class="btn-send-icon"></i>
+                                </button>
+                                
+                                <div class="form-status" id="formStatus"></div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                
+                <!-- Footer Branding -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span>GHUFRAN</span><span class="logo-dot">.</span>
+                    </a>
+                    <p class="brand-pitch">Turning ideas into cinematic and custom technical experiences that convert users into regular clients.</p>
+                </div>
+                
+                <!-- Quick Sitemap links -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services direct jumps -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Expertise</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#services">Video Editing</a></li>
+                        <li><a href="#services">Graphic Designing</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#portfolio">Featured Case Studies</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Fiverr Hub & Contact info -->
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Freelance Hubs</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="https://fiverr.com/" target="_blank" rel="noopener noreferrer">Fiverr Profile</a></li>
+                        <li><a href="https://upwork.com/" target="_blank" rel="noopener noreferrer">Upwork Portal</a></li>
+                        <li><a href="#contact">Direct Consultation</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright block -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Ghufran. All rights reserved. Designed for elite creator conversions.</p>
+                <div class="footer-meta-links">
+                    <a href="#home" class="scroll-to-top-btn magnetic" data-magnetic-strength="0.4" aria-label="Scroll back to top">
+                        <i data-lucide="arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cinematic Showreel Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close modal">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="lightbox-content">
+            <div class="lightbox-video-wrapper">
+                <!-- User: Replace this placeholder with direct local iframe or HTML5 video tag later -->
+                <!-- Example: 
+                <video id="lightboxVideo" controls>
+                    <source src="media/showreel.mp4" type="video/mp4">
+                </video> 
+                -->
+                <div class="modal-media-placeholder" id="modalMediaPlaceholder">
+                    <div class="placeholder-icon">
+                        <i data-lucide="film" class="icon-xl"></i>
+                    </div>
+                    <h3>Media Player Showcase</h3>
+                    <p>To connect your custom showreel video, save your video as <code>media/showreel.mp4</code> or replace the modal video source tags in <code>index.html</code>.</p>
+                    <button class="btn btn-primary" id="mockPlayBtn">
+                        <span>Simulate Video Playback</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <!-- GreenSock Animation Platform -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Main Interactivity -->
+    <script src="app.js"></script>
+</body>
+</html>

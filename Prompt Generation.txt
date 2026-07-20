@@ -1,0 +1,60 @@
+I am creating a portfolio website for my video editing portfolio, I want you to generate a prompt which describe how my website should be created 
+
+https://www.moncy.dev/
+
+The given link is of reference link which you can use for animations, themes and the pointer effect, the website should be like today's era that can attract users and clients 
+
+I want to add a header in which following categories should be present 
+
+1. Home
+
+2. Services
+
+3. About Us
+
+4. Contact Us
+
+etc
+
+Services include Video Editing
+
+-> Color Grading
+
+-> Music Video Editing
+
+-> Wedding Editing
+
+-> Motion Editing
+
+etc
+
+Graphic Designing
+
+-> Logo Design
+
+-> Flyers design
+
+-> Poster Design
+
+-> Bilboard Designs
+
+etc
+
+and Web Development 
+
+-> E-commerce Store
+
+-> Shopify Store
+
+-> Portfolio Website
+
+-> Business Website
+
+etc
+
+
+
+These are the services that could be included and i also have the attached media so make a prompt like that through which i can edit and add that media related to the service 
+
+And also the about us and contact us page, I'll edit that after the creation of website.
+
