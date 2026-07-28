@@ -693,3 +693,86 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+// ==============================
+// EmailJS Contact Form Setup
+// ==============================
+
+// Replace these with your EmailJS dashboard values
+const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
+const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+
+// Initialize EmailJS
+if (window.emailjs && EMAILJS_PUBLIC_KEY !== "YOUR_PUBLIC_KEY") {
+  emailjs.init({
+    publicKey: EMAILJS_PUBLIC_KEY,
+  });
+}
+
+const contactForm = document.getElementById("contact-form");
+const statusEl = document.getElementById("contact-status");
+const submitBtn = document.getElementById("contact-submit-btn");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    // Basic config check
+    if (
+      EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY" ||
+      EMAILJS_SERVICE_ID === "YOUR_SERVICE_ID" ||
+      EMAILJS_TEMPLATE_ID === "YOUR_TEMPLATE_ID"
+    ) {
+      setStatus("error", "Email service is not configured yet. Please set EmailJS keys.");
+      return;
+    }
+
+    const name = document.getElementById("name")?.value.trim();
+    const email = document.getElementById("email")?.value.trim();
+    const subject = document.getElementById("subject")?.value.trim();
+    const message = document.getElementById("message")?.value.trim();
+
+    // Validation
+    if (!name || !email || !subject || !message) {
+      setStatus("error", "Please fill in all required fields.");
+      return;
+    }
+
+    setLoading(true);
+    setStatus("info", "Sending your message...");
+
+    try {
+      // These keys (from_name, from_email, subject, message) must match EmailJS template variables
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+        to_email: "ghufranhafeez007@gmail.com",
+      });
+
+      setStatus("success", "✅ Message sent successfully! I will get back to you soon.");
+      contactForm.reset();
+    } catch (error) {
+      console.error("EmailJS send error:", error);
+      setStatus("error", "❌ Failed to send message. Please try again in a moment.");
+    } finally {
+      setLoading(false);
+    }
+  });
+}
+
+function setLoading(isLoading) {
+  if (!submitBtn) return;
+  submitBtn.disabled = isLoading;
+  submitBtn.textContent = isLoading ? "Sending..." : "Send Message";
+}
+
+function setStatus(type, text) {
+  if (!statusEl) return;
+  statusEl.textContent = text;
+  statusEl.style.color =
+    type === "success" ? "green" :
+    type === "error" ? "red" :
+    "#444";
+}
