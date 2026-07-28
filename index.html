@@ -388,5 +388,15 @@
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
+    <form id="contact-form">
+    <input type="text" id="name" name="name" placeholder="Your Name" required />
+    <input type="email" id="email" name="email" placeholder="Your Email" required />
+    <input type="text" id="subject" name="subject" placeholder="Subject" required />
+    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+  <button type="submit" id="contact-submit-btn">Send Message</button>
+
+  <p id="contact-status" style="margin-top:10px;"></p>
+</form>
 </body>
 </html>
