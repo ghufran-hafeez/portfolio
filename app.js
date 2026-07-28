@@ -742,24 +742,29 @@ if (contactForm) {
     setStatus("info", "Sending your message...");
 
     try {
-      // These keys (from_name, from_email, subject, message) must match EmailJS template variables
-      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-        from_name: name,
-        from_email: email,
-        subject: subject,
-        message: message,
-        to_email: "ghufranhafeez007@gmail.com",
-      });
-
-      setStatus("success", "✅ Message sent successfully! I will get back to you soon.");
-      contactForm.reset();
-    } catch (error) {
-      console.error("EmailJS send error:", error);
-      setStatus("error", "❌ Failed to send message. Please try again in a moment.");
-    } finally {
-      setLoading(false);
-    }
+  // Send visitor's message to you
+  await emailjs.send(EMAILJS_SERVICE_ID, "template_contact", {
+    from_name: name,
+    from_email: email,
+    subject: subject,
+    message: message,
+    to_email: "ghufranhafeez007@gmail.com",
   });
+
+  // Send auto reply to the visitor
+  await emailjs.send(EMAILJS_SERVICE_ID, "template_autoreply", {
+    from_name: name,
+    from_email: email,
+    subject: subject,
+  });
+
+  setStatus("success", "✅ Message sent successfully! I will get back to you soon.");
+  contactForm.reset();
+
+} catch (error) {
+  console.error(error);
+  setStatus("error", "❌ Failed to send message.");
+}
 }
 
 function setLoading(isLoading) {
