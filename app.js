@@ -719,9 +719,9 @@ if (contactForm) {
 
     // Basic config check
     if (
-      EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY" ||
-      EMAILJS_SERVICE_ID === "YOUR_SERVICE_ID" ||
-      EMAILJS_TEMPLATE_ID === "YOUR_TEMPLATE_ID"
+      EMAILJS_PUBLIC_KEY === "7iMp5GxX8PSnttPwa" ||
+      EMAILJS_SERVICE_ID === "service_l1qtaiv" ||
+      EMAILJS_TEMPLATE_ID === "template_xga06ri"
     ) {
       setStatus("error", "Email service is not configured yet. Please set EmailJS keys.");
       return;
