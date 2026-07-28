@@ -737,13 +737,12 @@ if (contactForm) {
       setStatus("error", "Please fill in all required fields.");
       return;
     }
+setLoading(true);
+setStatus("info", "Sending your message...");
 
-    setLoading(true);
-    setStatus("info", "Sending your message...");
-
-    try {
-  // Send visitor's message to you
-  await emailjs.send(EMAILJS_SERVICE_ID, "template_contact", {
+try {
+  // Send the contact message to you
+  await emailjs.send(EMAILJS_SERVICE_ID, "template_xga06ri", {
     from_name: name,
     from_email: email,
     subject: subject,
@@ -752,7 +751,7 @@ if (contactForm) {
   });
 
   // Send auto reply to the visitor
-  await emailjs.send(EMAILJS_SERVICE_ID, "template_autoreply", {
+  await emailjs.send(EMAILJS_SERVICE_ID, "template_ybr4yw7", {
     from_name: name,
     from_email: email,
     subject: subject,
@@ -762,9 +761,10 @@ if (contactForm) {
   contactForm.reset();
 
 } catch (error) {
-  console.error(error);
+  console.error("EmailJS Error:", error);
   setStatus("error", "❌ Failed to send message.");
-}
+} finally {
+  setLoading(false);
 }
 
 function setLoading(isLoading) {
