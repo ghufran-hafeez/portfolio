@@ -742,7 +742,7 @@ setStatus("info", "Sending your message...");
 
 try {
   // Send the contact message to you
-  await emailjs.send(EMAILJS_SERVICE_ID, "template_xga06ri", {
+  await emailjs.send(EMAILJS_SERVICE_ID, "template_tdt7qtm", {
     from_name: name,
     from_email: email,
     subject: subject,
@@ -751,7 +751,7 @@ try {
   });
 
   // Send auto reply to the visitor
-  await emailjs.send(EMAILJS_SERVICE_ID, "template_ybr4yw7", {
+  await emailjs.send(EMAILJS_SERVICE_ID, "template_5herc5h", {
     from_name: name,
     from_email: email,
     subject: subject,
